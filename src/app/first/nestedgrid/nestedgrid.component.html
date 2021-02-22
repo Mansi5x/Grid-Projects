@@ -1,0 +1,16 @@
+<p>nestedgrid works!</p>
+<jqxGrid #myGrid
+    [width]="getWidth()" [height]="365" [source]="employeesAdapter" [columns]="columns"
+    [rowdetails]="true" [rowsheight]="35" [initrowdetails]="initRowDetails"
+    [ready]="ready" [rowdetailstemplate]="rowdetailstemplate">
+</jqxGrid>
+
+<label>Hi</label>
+ /* Dropdown to Grid*/
+<jqxDropDownButton #myDropDownButton [width]="150" [height]="25">
+  <jqxGrid #mydrpGrid (onRowselect)="myGridOnRowSelect($event)"
+      [width]="550" [source]="dataAdapter" [columns]="columns1" [ready]="ready1"
+      [pageable]="true" [columnsresize]="true" [autoheight]="true">
+  </jqxGrid>
+</jqxDropDownButton>
+

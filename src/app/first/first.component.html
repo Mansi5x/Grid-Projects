@@ -1,0 +1,20 @@
+<p>First Module Work!</p>
+
+<jqxButton routerLink="simple" [template]="'primary'" style="float: left; margin-left: 4px">
+   Simple Grid</jqxButton>
+<jqxButton routerLink="abc" [template]="'warning'"  style="float: left; margin-left: 4px">
+   Direct Grid Create</jqxButton>
+<jqxButton [routerLink]="['self-api']" [template]="'danger'" style="float: left; margin-left: 4px">
+  Custom Grid</jqxButton>
+<jqxButton routerLink="line-chart" [template]="'inverse'" style="float: left; margin-left: 4px" >
+   Line Chart</jqxButton>
+<jqxButton  routerLink="piechart" [template]="'link'" style="float: left">
+   Pie Chart Static Bind</jqxButton>
+<jqxButton routerLink="nestedgrid">Nested Grid </jqxButton>
+<jqxButton routerLink="nest" [template]="'primary'" > Nest</jqxButton>
+  <jqxButton routerLink="groupingexample" [template]="'warning'" >
+    Grouping</jqxButton>
+
+
+<router-outlet> </router-outlet>
+

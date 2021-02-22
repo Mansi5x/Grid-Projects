@@ -1,0 +1,32 @@
+<p>Simple  Grid & Grid in JQXTabs Works !</p>
+<jqxGrid
+[selectionmode]="'checkbox'"
+[source]="source"
+[theme]="'material'"
+[autoheight]="true"
+[pageable]="true"
+[altrows]="true"
+[filterable]="true"
+[sortable]="true"
+[columns]="columns"
+[adaptive]="true"
+[columnsresize]="true"
+#grid>
+</jqxGrid>
+<div><button>Submit</button> </div>
+<jqxTabs [width]="600" [height]="440">
+  <ul>
+      <li style="margin-left: 30px">Grid 1</li>
+      <li>Grid 2</li>
+  </ul>
+  <div style="overflow: hidden">
+      <jqxGrid
+        [source]="Grid1Adapter" [columns]="Grid1columns" [pageable]="true">
+      </jqxGrid>
+  </div>
+  <div style="overflow: hidden">
+      <jqxGrid
+          [source]="Grid2Adapter2" [columns]="Grid2columns2" [pageable]="true">
+      </jqxGrid> -->
+</div>
+</jqxTabs>
